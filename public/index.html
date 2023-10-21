@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Doruk Task</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script> <!-- JQuery -->
+    <meta name="csrf-token" content="{{ csrf_token() }}"> <!-- CSRF Token -->
+    <link rel="stylesheet" href="/style.css"> <!-- CSS -->
+</head>
+<body>
+    <div>
+        <button onclick="KullaniciPanel()" class="btn btn-primary" id="kullaniciEkle">Kullanıcı Ekle</button>
+        
+        <div id="eklemePanel">
+            <label class="label">Kullanıcı Adı</label>
+            <input class="input" type="text" placeholder="Adinizi Girin" id="kkadi">
+            <br>
+            <label class="label">Şifre</label>
+            <input class="input" type="text" placeholder="Şifrenizi girin" id="sifre">
+            <br>
+            <button onclick="kullaniciEkle()" class="btn btn-primary" id="kullaniciEkle">Kullanıcı Ekle</button>
+            <button onclick="EklemeTemizle()" class="btn btn-primary" id="temizledim">Temizle</button>
+        </div>
+    </div>
+    <div>
+        <button onclick="KullaniciAramaPaneli()" class="btn btn-primary" id="KullaniciAramaPaneli">Kullanıcı Ara</button>
+        
+        <div id="KullaniciAraPanel">
+            <label class="label">Kullanıcı Adı</label>
+            <input class="input" type="text" placeholder="Adinizi Girin" id="kkadi22">
+            <br>
+            <br>
+            <button onclick="kullaniciAra()" class="btn btn-primary" id="kullaniciArama">Kullanıcı Ara</button>
+            <button onclick="Temizle()" class="btn btn-primary" id="temizle">Temizle</button>
+        </div>
+    </div>
+    
+    <div>
+        <button onclick="KullaniciPanel2()" class="btn btn-primary" id="kullaniciSil2">Kullanıcı Sil</button>
+        
+        <div id="silmePanel">
+            <label class="label">Kullanıcı Adı</label>
+            <input class="input" type="text" placeholder="Adinizi Girin" id="Kkadisilmek">
+            <br>
+            <br>
+            <button onclick="KullaniciSil()" class="btn btn-primary" id="butonkk">Kullanıcı Sil</button>
+        </div>
+    </div>
+    <div>
+        <button onclick="KullaniciGuncelleme()" class="btn btn-primary" id="KullaniciGuncel">Kullanıcı Güncelle</button>
+        
+        <div id="KullaniciGuncellePanel">
+            <label class="label">Kullanıcı Adı</label>
+            <input class="input" type="text" placeholder="Adinizi Girin" id="kkadi222">
+            <br>
+            <label class="label">Yeni Şifre </label>
+            <input class="input" type="text" placeholder="Şifre Girin" id="sifre22">
+            <br>
+            <button onclick="kullaniciGuncel()" class="btn btn-primary" id="kullaniciArama">Kullanıcı Güncelle</button>
+            <button onclick="GuncelTemizle()" class="btn btn-primary" id="temizle">Temizle</button>
+        </div>
+    </div>
+        <table class="kullanicilar">
+       
+        </table>
+    </div>
+    <script src="/client.js"></script>
+</body>
+</html>

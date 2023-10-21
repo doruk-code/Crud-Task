@@ -1,0 +1,65 @@
+.kullanicilar {
+/* ôrtala */
+    margin: 0 auto;
+    width: 400px;
+    padding: 1em;
+    border: 1px solid #CCC;
+    border-radius: 1em;
+    line-height: 1.5em;
+   
+}
+
+
+.table {
+    border-collapse: collapse;
+    width: 100%;
+}
+
+.table td, .table th {
+    border: 1px solid #ddd;
+    padding: 8px;
+}
+
+
+#eklemePanel {
+    display: none;
+    margin: 0 auto;
+    width: 400px;
+    padding: 1em;
+    border: 1px solid #CCC;
+    border-radius: 1em;
+    line-height: 1.5em;
+}
+
+
+#silmePanel {
+    display: none;
+    margin: 0 auto;
+    width: 400px;
+    padding: 1em;
+    border: 1px solid #CCC;
+    border-radius: 1em;
+    line-height: 1.5em;
+}
+
+
+#KullaniciAraPanel {
+    display: none;
+    margin: 0 auto;
+    width: 400px;
+    padding: 1em;
+    border: 1px solid #CCC;
+    border-radius: 1em;
+    line-height: 1.5em;
+}
+
+
+#KullaniciGuncellePanel {
+    display: none;
+    margin: 0 auto;
+    width: 400px;
+    padding: 1em;
+    border: 1px solid #CCC;
+    border-radius: 1em;
+    line-height: 1.5em;
+}
